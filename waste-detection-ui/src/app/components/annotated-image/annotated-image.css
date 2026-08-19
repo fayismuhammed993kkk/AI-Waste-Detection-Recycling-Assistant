@@ -1,0 +1,57 @@
+.annotated-section{
+
+    margin-top:70px;
+
+}
+
+.annotated-section h2{
+
+    text-align:center;
+
+    color:#2E7D32;
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+.image-card{
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+.image-card img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.image-card img:hover{
+
+    transform:scale(1.02);
+
+}
+
+.image-actions{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}

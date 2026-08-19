@@ -1,0 +1,78 @@
+<section class="upload-section">
+
+    <h2>Upload Waste Image</h2>
+
+    <mat-card class="upload-card">
+
+        <input
+            type="file"
+            accept="image/*"
+            #fileInput
+            hidden
+            (change)="onFileSelected($event)">
+
+        <div
+            class="upload-area"
+            (click)="fileInput.click()">
+
+            <mat-icon>cloud_upload</mat-icon>
+
+            <h3>Drag & Drop Image Here</h3>
+
+            <p>or Click to Browse</p>
+
+            <span>Supports JPG • JPEG • PNG</span>
+
+        </div>
+
+    </mat-card>
+
+    @if(previewUrl){
+
+    <div class="preview">
+
+        <h3>Image Preview</h3>
+
+        <img
+            [src]="previewUrl"
+            alt="Preview">
+
+        <div class="buttons">
+
+            <button
+                mat-raised-button
+                color="warn"
+                (click)="removeImage()">
+
+                Remove
+
+            </button>
+
+            <button
+                mat-raised-button
+                color="primary"
+                (click)="detectWaste()">
+
+                Detect Waste
+
+            </button>
+
+        </div>
+
+    </div>
+
+    }
+
+    @if(loading){
+
+    <div class="loading">
+
+        <h3>Detecting Waste...</h3>
+
+        <p>Please wait while the AI analyzes the image.</p>
+
+    </div>
+
+    }
+
+</section>

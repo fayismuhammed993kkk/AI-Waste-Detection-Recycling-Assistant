@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets
+Dataset/
+Dataset_optimized/
+
+# Generated output
+output/
+Backend/output/
+
+# Unused model checkpoint
+Backend/models/best.pt
+
+# Angular
+waste-detection-ui/node_modules/
+waste-detection-ui/.angular/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+
+# Environment files
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# R
+.Rhistory

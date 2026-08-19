@@ -1,0 +1,112 @@
+.detection-section{
+    margin-top:60px;
+}
+
+.detection-section h2{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:30px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:25px;
+}
+
+.detect-card{
+    padding:25px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.detect-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.badge{
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.recyclable{
+    background:#E8F5E9;
+    color:#2E7D32;
+}
+
+.non-recyclable{
+    background:#FDECEA;
+    color:#C62828;
+}
+
+.confidence{
+    margin:20px 0;
+}
+
+.confidence span{
+    display:block;
+    text-align:right;
+    margin-top:6px;
+    font-weight:bold;
+}
+
+.bin{
+    margin:20px 0;
+}
+
+.bin-chip{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 14px;
+    border-radius:20px;
+    color:white;
+    font-size:13px;
+}
+
+.blue{
+    background:#1976D2;
+}
+
+.green{
+    background:#2E7D32;
+}
+
+.yellow{
+    background:#F9A825;
+}
+
+.red{
+    background:#D32F2F;
+}
+
+.impact{
+    margin-top:20px;
+    background:#F5F5F5;
+    padding:15px;
+    border-radius:12px;
+}
+
+.chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.chips span{
+    background:#E8F5E9;
+    color:#2E7D32;
+    padding:8px 12px;
+    border-radius:20px;
+    font-size:13px;
+}

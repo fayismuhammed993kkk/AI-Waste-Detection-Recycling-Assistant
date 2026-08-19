@@ -1,0 +1,25 @@
+@if(summaryEntries().length){
+
+<section class="summary-section">
+
+    <h2>Detection Summary</h2>
+
+    <div class="summary-grid">
+
+        @for(item of summaryEntries(); track item){
+
+        <mat-card class="summary-card">
+
+            <h3>{{ item[0] }}</h3>
+
+            <span>{{ item[1] }}</span>
+
+        </mat-card>
+
+        }
+
+    </div>
+
+</section>
+
+}

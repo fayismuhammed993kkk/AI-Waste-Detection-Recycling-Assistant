@@ -1,0 +1,97 @@
+@if(detections().length){
+
+<section class="detection-section">
+
+    <h2>Detected Waste Objects</h2>
+
+    <div class="card-grid">
+
+        @for(item of detections(); track item){
+
+        <mat-card class="detect-card">
+
+            <div class="card-header">
+
+                <h2>{{ item.class }}</h2>
+
+                @if(item.recyclable){
+
+                    <span class="badge recyclable">
+                        ♻️ Recyclable
+                    </span>
+
+                } @else {
+
+                    <span class="badge non-recyclable">
+                        ❌ Non-Recyclable
+                    </span>
+
+                }
+
+            </div>
+
+            <p><strong>Material:</strong> {{ item.material }}</p>
+
+            <div class="confidence">
+
+                <strong>Confidence</strong>
+
+                <mat-progress-bar
+                    mode="determinate"
+                    [value]="item.confidence * 100">
+                </mat-progress-bar>
+
+                <span>{{ (item.confidence * 100).toFixed(1) }}%</span>
+
+            </div>
+
+            <div class="bin">
+
+                <strong>Recycle Bin</strong>
+
+                <span
+                    class="bin-chip"
+                    [ngClass]="{
+                      'blue': item.bin_color === 'Blue',
+                      'green': item.bin_color === 'Green',
+                      'yellow': item.bin_color === 'Yellow',
+                      'red': item.bin_color === 'Red'
+                    }">
+
+                    {{ item.bin_color }} Bin
+
+                </span>
+
+            </div>
+
+            <p><strong>Bin:</strong> {{ item.bin }}</p>
+
+            <p><strong>Advice:</strong> {{ item.advice }}</p>
+
+            <div class="impact">
+
+                <strong>🌍 Environmental Impact</strong>
+
+                <p>{{ item.environmental_impact }}</p>
+
+            </div>
+
+            <div class="chips">
+
+                @for(product of item.recycled_into; track product){
+
+                    <span>{{ product }}</span>
+
+                }
+
+            </div>
+
+        </mat-card>
+
+        }
+
+    </div>
+
+</section>
+
+}

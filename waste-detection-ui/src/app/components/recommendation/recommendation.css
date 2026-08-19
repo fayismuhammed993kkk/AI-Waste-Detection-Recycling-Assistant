@@ -1,0 +1,57 @@
+.recommendation-section{
+    margin-top:60px;
+}
+
+.recommendation-section h2{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:30px;
+}
+
+.recommendation-card{
+    padding:35px;
+    border-radius:20px;
+}
+
+.status-banner{
+    background:#E8F5E9;
+    color:#2E7D32;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.counts{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.count-box{
+    text-align:center;
+    padding:20px;
+    border-radius:15px;
+    color:white;
+}
+
+.recyclable{
+    background:#43A047;
+}
+
+.non-recyclable{
+    background:#E53935;
+}
+
+.count-box h1{
+    font-size:50px;
+    margin:0;
+}
+
+.instruction{
+    background:#F5F5F5;
+    padding:15px;
+    margin:12px 0;
+    border-radius:12px;
+}

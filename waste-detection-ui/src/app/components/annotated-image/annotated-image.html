@@ -1,0 +1,44 @@
+@if(imageUrl()){
+
+<section class="annotated-section">
+
+    <h2>AI Detection Result</h2>
+
+    <mat-card class="image-card">
+
+        <img
+            [src]="imageUrl()"
+            alt="Annotated Detection">
+
+        <div class="image-actions">
+
+            <a
+                mat-raised-button
+                color="primary"
+                [href]="imageUrl()"
+                target="_blank">
+
+                <mat-icon>open_in_new</mat-icon>
+
+                Open Full Image
+
+            </a>
+
+            <a
+                mat-stroked-button
+                [href]="imageUrl()"
+                download>
+
+                <mat-icon>download</mat-icon>
+
+                Download
+
+            </a>
+
+        </div>
+
+    </mat-card>
+
+</section>
+
+}

@@ -2,6 +2,9 @@
 
 An end-to-end Computer Vision application for automated waste detection and recycling assistance using YOLOv8n, FastAPI, and Angular.
 
+### Topics
+`Python` `YOLOv8` `Computer Vision` `Object Detection` `FastAPI` `Angular` `Machine Learning` `AI`
+
 
 ## 🚀 Live Demo Preview
 
@@ -315,17 +318,10 @@ This allows the system to go beyond simple object detection and provide practica
 *Data Science | AI/ML | Computer Vision | Msc Statistics*
 
 
-## About
-
-End-to-end AI-powered waste detection and recycling assistance using YOLOv8n, FastAPI, and Angular.
 
 ### Topics
 
 `Python` `YOLOv8` `Computer Vision` `Object Detection` `FastAPI` `Angular` `Machine Learning` `AI`
 
-### Resources
 
-[Readme](https://github.com/fayismuhammed993kkk/AI-Waste-Detection-Recycling-Assistant)
-
-[Repository](https://github.com/fayismuhammed993kkk/AI-Waste-Detection-Recycling-Assistant)
 

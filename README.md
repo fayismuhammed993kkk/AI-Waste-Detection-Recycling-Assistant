@@ -1,4 +1,4 @@
-\♻️ AI Waste Detection \& Recycling Assistant
+♻️ AI Waste Detection \& Recycling Assistant
 
 
 
@@ -6,11 +6,11 @@ An AI-powered waste detection and recycling assistance system that uses \*\*YOLO
 
 
 
-\---
+---
 
 
 
-\📌 Project Overview
+📌 Project Overview
 
 
 
@@ -25,70 +25,69 @@ The system combines a computer vision model with a web-based application:
 \*\*Image Upload → YOLOv8n Detection → Waste Classification → Recycling Guidance → Annotated Result\*\*
 
 
-
-\---
-
-
-
-\ ✨ Features
+---
 
 
 
-\- 🖼️ Upload waste images through a web interface
-
-\- 🤖 Detect waste objects using a trained \*\*YOLOv8n\*\* model
-
-\- 📦 Display detected objects with bounding boxes
-
-\- 📊 Provide detection results and confidence information
-
-\- ♻️ Provide recycling/disposal guidance based on detected waste
-
-\- ⚡ FastAPI backend for model inference
-
-\- 🌐 Angular frontend for user interaction
-
-\- 🖼️ Generate annotated images containing detection results
+ ✨ Features
 
 
 
-\---
+- 🖼️ Upload waste images through a web interface
+
+- 🤖 Detect waste objects using a trained \*\*YOLOv8n\*\* model
+
+- 📦 Display detected objects with bounding boxes
+
+- 📊 Provide detection results and confidence information
+
+- ♻️ Provide recycling/disposal guidance based on detected waste
+
+- ⚡ FastAPI backend for model inference
+
+- 🌐 Angular frontend for user interaction
+
+- 🖼️ Generate annotated images containing detection results
 
 
 
-\ 🏗️ System Architecture
+---
+
+
+
+🏗️ System Architecture
 
 
 
 ```text
 
-&#x20;                   User
+                  User
 
-&#x20;                     │
+                   │
 
-&#x20;                     ▼
+                     ▼
 
-&#x20;            ┌─────────────────┐
+            ┌─────────────────┐
 
-&#x20;            │ Angular Frontend│
+            │ Angular Frontend│
 
-&#x20;            └────────┬────────┘
+            └────────┬────────┘
 
-&#x20;                     │
+                    │
 
-&#x20;               Image Upload
+             Image Upload
 
-&#x20;                     │
+                    │
 
-&#x20;                     ▼
+                    ▼
 
-&#x20;            ┌─────────────────┐
+            ┌─────────────────┐
 
-&#x20;            │ FastAPI Backend │
+            │ FastAPI Backend │
 
-&#x20;            └────────┬────────┘
+            └────────┬────────┘
 
-&#x20;                     │
+                   │
 
                      ▼
 

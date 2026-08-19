@@ -1,4 +1,4 @@
-\# ♻️ AI Waste Detection \& Recycling Assistant
+\♻️ AI Waste Detection \& Recycling Assistant
 
 
 
@@ -10,7 +10,7 @@ An AI-powered waste detection and recycling assistance system that uses \*\*YOLO
 
 
 
-\## 📌 Project Overview
+\📌 Project Overview
 
 
 
@@ -30,7 +30,7 @@ The system combines a computer vision model with a web-based application:
 
 
 
-\## ✨ Features
+\ ✨ Features
 
 
 
@@ -56,7 +56,7 @@ The system combines a computer vision model with a web-based application:
 
 
 
-\## 🏗️ System Architecture
+\ 🏗️ System Architecture
 
 
 
@@ -90,43 +90,43 @@ The system combines a computer vision model with a web-based application:
 
 &#x20;                     │
 
-&#x20;                     ▼
+                     ▼
 
-&#x20;            ┌─────────────────┐
+           ┌─────────────────┐
 
-&#x20;            │    YOLOv8n      │
+            │    YOLOv8n      │
 
-&#x20;            │ Trained Model   │
+            │ Trained Model   │
 
-&#x20;            └────────┬────────┘
+           └────────┬────────┘
 
-&#x20;                     │
+                    │
 
-&#x20;              Object Detection
+             Object Detection
 
-&#x20;                     │
+                    │
 
-&#x20;                     ▼
+                     ▼
 
-&#x20;            ┌─────────────────┐
+           ┌─────────────────┐
 
-&#x20;            │ Waste Detection │
+           │ Waste Detection │
 
-&#x20;            │    Results      │
+           │    Results      │
 
-&#x20;            └────────┬────────┘
+           └────────┬────────┘
 
-&#x20;                     │
+                     │
 
-&#x20;                     ▼
+                     ▼
 
-&#x20;            ┌─────────────────┐
+            ┌─────────────────┐
 
-&#x20;            │ Recycling       │
+            │ Recycling       │
 
-&#x20;            │ Guidance        │
+            │ Guidance        │
 
-&#x20;            └────────┬────────┘
+            └────────┬────────┘
 
 &#x20;                     │
 

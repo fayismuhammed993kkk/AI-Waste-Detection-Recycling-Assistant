@@ -1,83 +1,90 @@
-# ♻️ AI Waste Detection & Recycling Assistant
+# ♻️ AI Waste Detection \& Recycling Assistant
 
-An end-to-end Computer Vision application for automated waste detection and recycling assistance using **YOLOv8n**, **FastAPI**, and **Angular**.
+An end-to-end Computer Vision application for automated waste detection and recycling assistance using YOLOv8n, FastAPI, and Angular.
 
----
+\---
 
-## 🚀 Project Overview
+## 🚀 Live Demo Preview
 
-The application uses a trained YOLOv8n object detection model to identify waste objects from uploaded images. The detected objects are presented with bounding boxes and confidence scores, while the system provides recycling or disposal guidance based on the detected waste category.
+*(Above: The Angular frontend allowing users to upload a waste image, send it to the FastAPI backend, run YOLOv8n inference, and display detected waste objects with bounding boxes and recycling guidance).*
 
-**Image Upload → YOLOv8n Inference → Waste Detection → Recycling Guidance → Results Display**
-
----
+\---
 
 ## ⭐ Project Highlights
 
-- **Custom-trained YOLOv8n model** for waste object detection.
-- **End-to-end AI pipeline** from model training to web application integration.
-- **FastAPI REST backend** for model inference.
-- **Angular frontend** for interactive user interaction.
-- **Automated waste detection** with bounding boxes and confidence scores.
-- **Recycling guidance system** based on detected waste categories.
-- **Annotated image generation** for visualizing detection results.
-- **Decoupled frontend and backend architecture** for easier development and deployment.
+* **Custom-trained YOLOv8n model** for multi-class waste object detection.
+* **End-to-end AI pipeline** from dataset preparation and model training to web application integration.
+* **FastAPI REST backend** for model inference.
+* **Angular frontend** for interactive user interaction.
+* **Object detection visualization** with bounding boxes and confidence scores.
+* **Automated recycling guidance** based on detected waste categories.
+* **Annotated image generation** for visualizing detection results.
 
----
+\---
 
-## 🎯 Key Features & Real-World Applications
+## 🎯 Key Features \& Real-World Applications
 
 ### Applications
 
-- **Smart Waste Segregation:** Assist users in identifying waste categories.
-- **Recycling Assistance:** Provide appropriate recycling or disposal guidance.
-- **Waste Management:** Support automated identification of waste materials.
-- **Environmental Awareness:** Help users make better waste-handling decisions.
+* **Smart Waste Segregation:** Automated identification of waste objects.
+* **Recycling Assistance:** Provides recycling and disposal guidance.
+* **Waste Management:** Supports automated waste classification and identification.
+* **Environmental Awareness:** Helps users understand appropriate waste disposal.
+* **Smart Recycling Systems:** Can be extended to automated sorting and monitoring systems.
 
 ### Features
 
-- **Image-Based Detection:** Upload an image and detect waste objects.
-- **Object Localization:** Display bounding boxes around detected objects.
-- **Confidence Scores:** Show the model's confidence for each detection.
-- **Automated Recycling Guidance:** Map detected waste categories to disposal/recycling information.
-- **Annotated Results:** Generate an image containing the detection results.
-- **Interactive Web UI:** Access the complete system through an Angular frontend.
+* **Automated Waste Detection:** Detects multiple waste categories from an uploaded image.
+* **Object Localization:** Generates bounding boxes around detected waste objects.
+* **Confidence Scores:** Displays confidence values for individual detections.
+* **Recycling Guidance:** Maps detected waste categories to recycling/disposal recommendations.
+* **Annotated Results:** Generates an annotated image containing detection results.
+* **Interactive Web UI:** Upload and analyze images through the Angular interface.
 
----
+\---
 
 ## 📸 Demo Gallery
 
-Add selected screenshots of the application and detection results here.
+<!-- Add screenshots of your application here -->
 
-<!-- Example:
-![Waste Detection Result](images/detection-result.jpg)
--->
+\---
 
----
-
-## 🏗️ System Architecture & Workflow
+## 🏗️ System Architecture \& Workflow
 
 ```text
 User Uploads Image
-        ↓
+      ↓
 Angular Frontend
-        ↓
+      ↓
 FastAPI Backend API
-        ↓
+      ↓
 YOLOv8n Trained Model
-        ↓
+      ↓
 Waste Object Detection
-        ↓
+      ↓
 Bounding Boxes + Confidence Scores
-        ↓
+      ↓
 Recycling Mapping
-        ↓
-Detection & Recycling Results
-        ↓
-Results Displayed in Angular UI
+      ↓
+Detection \& Recycling Recommendations
+      ↓
+Results Displayed in Browser
 ```
 
----
+\---
+
+## 📊 Key Results \& Evaluation
+
+### Global Evaluation
+
+|**Metric**|**Score**|
+|-|-|
+|**Precision**|**74.0%**|
+|**Recall**|**48.3%**|
+|**mAP50**|**49.8%**|
+|||
+
+
 
 ## 🧠 Machine Learning Model
 
@@ -89,137 +96,61 @@ The trained model used by the backend is:
 Backend/models/yolov8nbest.pt
 ```
 
-The original YOLOv8n model used during model development is also included in the notebook directory:
+The model receives an input image and returns detected waste objects along with their bounding-box locations and confidence scores.
 
-```text
-Notebook/yolov8n.pt
-```
+The training workflow and model development are documented in the project Jupyter Notebook.
 
-The trained model receives an input image and predicts waste objects along with their bounding-box locations and confidence scores.
-
----
-
-## 📊 Model Development
-
-The model development workflow is documented in:
-
-```text
-Notebook/waste_Detection.ipynb
-```
-
-The notebook contains the machine learning workflow used for the waste detection project, including dataset preparation, model training, evaluation, and inference experiments.
-
----
+\---
 
 ## 🛠️ Technology Stack
 
-### Computer Vision & AI
+### Computer Vision \& AI
 
-- **Python**
-- **YOLOv8n**
-- **Ultralytics**
-- **PyTorch**
-- **OpenCV**
-- **NumPy**
-- Object Detection
+* **Python**
+* **YOLOv8n**
+* **Ultralytics**
+* **PyTorch**
+* **OpenCV**
+* **NumPy**
+* Object Detection
 
 ### Backend Engineering
 
-- **Python**
-- **FastAPI**
-- **Uvicorn**
-- REST API
-- File Upload Handling
+* **Python**
+* **FastAPI**
+* **Uvicorn**
+* REST API
+* File Upload Handling
 
 ### Frontend Engineering
 
-- **Angular**
-- **TypeScript**
-- **HTML**
-- **CSS**
+* **Angular**
+* **TypeScript**
+* **HTML5**
+* **CSS**
 
 ### Development Tools
 
-- **Jupyter Notebook**
-- **Git**
-- **GitHub**
+* **Google Colab**
+* **Jupyter Notebook**
+* **Git**
+* **GitHub**
 
----
+\---
 
-## 📁 Repository Structure
+## 💻 Setup \& Installation
 
-```text
-AI-Waste-Detection-Recycling-Assistant/
-│
-├── Backend/
-│   ├── models/
-│   │   └── yolov8nbest.pt
-│   │
-│   ├── app.py
-│   ├── model.py
-│   ├── recycle_mapping.py
-│   └── requirements.txt
-│
-├── Notebook/
-│   ├── class_distribution.csv
-│   ├── waste_Detection.ipynb
-│   └── yolov8n.pt
-│
-├── waste-detection-ui/
-│   ├── public/
-│   ├── src/
-│   ├── angular.json
-│   ├── package.json
-│   └── package-lock.json
-│
-├── .gitignore
-└── README.md
-```
+To run this project locally, start both the FastAPI backend and Angular frontend.
 
----
-
-## 🔄 Application Workflow
-
-### 1. Upload Image
-
-The user uploads a waste image through the Angular web interface.
-
-### 2. API Request
-
-The Angular frontend sends the image to the FastAPI backend.
-
-### 3. YOLOv8n Inference
-
-The FastAPI backend loads the trained YOLOv8n model and performs object detection.
-
-### 4. Waste Detection
-
-The model identifies waste objects and returns bounding boxes and confidence scores.
-
-### 5. Recycling Mapping
-
-The detected waste categories are processed using the recycling mapping logic.
-
-### 6. Annotated Image
-
-The backend generates an annotated image showing the detected objects.
-
-### 7. Results Display
-
-The Angular frontend displays the detection results and recycling recommendations.
-
----
-
-## 🚀 Setup & Installation
-
-### 1. Clone the Repository
+### 1\. Clone the Repository
 
 ```bash
 git clone https://github.com/fayismuhammed993kkk/AI-Waste-Detection-Recycling-Assistant.git
+
 cd AI-Waste-Detection-Recycling-Assistant
 ```
 
-### 2. Backend Setup
+### 2\. Backend Setup (FastAPI)
 
 Navigate to the backend:
 
@@ -233,10 +164,12 @@ Create a virtual environment:
 python -m venv venv
 ```
 
-Activate it on Windows:
+Activate the environment on Windows:
 
 ```bash
-venv\Scripts\activate
+venv\\Scripts
+
+ctivate
 ```
 
 Install dependencies:
@@ -257,15 +190,17 @@ The backend API will be available at:
 http://127.0.0.1:8000
 ```
 
-FastAPI interactive documentation:
+FastAPI documentation:
 
 ```text
 http://127.0.0.1:8000/docs
 ```
 
-### 3. Frontend Setup
+### 3\. Frontend Setup (Angular)
 
-Open a new terminal and navigate to:
+Open a **new, separate terminal**.
+
+Navigate to the Angular application:
 
 ```bash
 cd waste-detection-ui
@@ -280,89 +215,138 @@ npm install
 Start the Angular development server:
 
 ```bash
-ng serve
+ng serve --open
 ```
 
-The frontend will normally be available at:
+The frontend application will be available at:
 
 ```text
 http://localhost:4200
 ```
 
----
+\---
 
-## 📡 API
-
-### Health Check
-
-```http
-GET /
-```
-
-Example response:
-
-```json
-{
-  "message": "AI Waste Detection & Recycling Assistant is Running!"
-}
-```
-
-### Waste Detection
-
-The backend accepts an uploaded image and performs YOLOv8n inference.
-
-The generated annotated images are served through:
+## 📁 Repository Structure
 
 ```text
-/output
+AI-Waste-Detection-Recycling-Assistant/
+│
+├── Backend/
+│   ├── models/
+│   │   └── yolov8nbest.pt
+│   │
+│   ├── app.py
+│   ├── model.py
+│   ├── recycle\_mapping.py
+│   └── requirements.txt
+│
+├── Notebook/
+│   ├── class\_distribution.csv
+│   ├── waste\_Detection.ipynb
+│   └── yolov8n.pt
+│
+├── waste-detection-ui/
+│   ├── public/
+│   ├── src/
+│   ├── angular.json
+│   ├── package.json
+│   └── package-lock.json
+│
+├── .gitignore
+└── README.md
 ```
 
----
+\---
+
+## 🔄 Application Workflow
+
+### 1\. Upload Image
+
+The user uploads an image containing waste through the Angular interface.
+
+### 2\. API Request
+
+The Angular frontend sends the uploaded image to the FastAPI backend.
+
+### 3\. Object Detection
+
+The backend loads the trained YOLOv8n model and performs inference.
+
+### 4\. Waste Identification
+
+The model identifies waste objects and generates bounding boxes and confidence scores.
+
+### 5\. Recycling Mapping
+
+Detected waste categories are mapped to appropriate recycling or disposal recommendations.
+
+### 6\. Annotated Image
+
+The backend generates an annotated image containing the detected waste objects.
+
+### 7\. Results Display
+
+The Angular frontend displays the detected objects, confidence scores, annotated image, and recycling recommendations.
+
+\---
 
 ## ♻️ Recycling Assistance
 
 The recycling guidance logic is implemented in:
 
 ```text
-Backend/recycle_mapping.py
+Backend/recycle\_mapping.py
 ```
 
-The component maps detected waste categories to relevant recycling or disposal guidance.
+Detected waste categories are mapped to relevant recycling or disposal guidance.
 
----
+This allows the system to go beyond simple object detection and provide practical waste-management recommendations.
+
+\---
 
 ## 🎯 Project Objectives
 
-- Automate waste detection using computer vision.
-- Assist users in identifying waste materials.
-- Provide recycling and disposal guidance.
-- Integrate a trained deep learning model into a practical web application.
-- Build an end-to-end AI system combining machine learning, backend APIs, and frontend development.
-- Demonstrate deployment-oriented AI application development.
+* Automate waste detection using Computer Vision.
+* Identify multiple waste categories from images.
+* Assist users with recycling and disposal decisions.
+* Integrate a trained deep learning model into a real-world web application.
+* Build an end-to-end AI system combining Machine Learning, FastAPI, and Angular.
+* Demonstrate practical deployment-oriented AI application development.
 
----
+\---
 
-## 🔮 Future Improvements
+## 🚀 Future Improvements
 
-- Improve detection accuracy with additional training data.
-- Expand the number of supported waste categories.
-- Add real-time camera-based waste detection.
-- Add multilingual recycling guidance.
-- Deploy the application to a cloud platform.
-- Add analytics for frequently detected waste categories.
-- Optimize inference for edge and mobile devices.
+* Expand the dataset and training samples for improved detection accuracy.
+* Add real-time camera-based waste detection.
+* Add multilingual recycling recommendations.
+* Expand recycling guidance for additional waste categories.
+* Deploy the application to a cloud platform.
+* Add analytics for frequently detected waste categories.
+* Optimize inference for edge and mobile devices.
+* Integrate automated waste sorting hardware for smart recycling systems.
 
----
+\---
 
 ## 👨‍💻 Author
 
 **Muhammed Fayis**
 
-AI / Machine Learning & Data Science
+*Data Science | AI/ML | Computer Vision | Msc Statistics*
 
----
+\---
 
-## 📌 GitHub
+## About
 
-**Repository:**  
-https://github.com/fayismuhammed993kkk/AI-Waste-Detection-Recycling-Assistant
+End-to-end AI-powered waste detection and recycling assistance using YOLOv8n, FastAPI, and Angular.
+
+### Topics
+
+`Python` `YOLOv8` `Computer Vision` `Object Detection` `FastAPI` `Angular` `Machine Learning` `AI`
+
+### Resources
+
+[Readme](https://github.com/fayismuhammed993kkk/AI-Waste-Detection-Recycling-Assistant)
+
+[Repository](https://github.com/fayismuhammed993kkk/AI-Waste-Detection-Recycling-Assistant)
+

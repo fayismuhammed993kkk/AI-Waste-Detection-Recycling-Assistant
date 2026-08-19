@@ -2,13 +2,11 @@
 
 An end-to-end Computer Vision application for automated waste detection and recycling assistance using YOLOv8n, FastAPI, and Angular.
 
-\
 
 ## 🚀 Live Demo Preview
 
 *(Above: The Angular frontend allowing users to upload a waste image, send it to the FastAPI backend, run YOLOv8n inference, and display detected waste objects with bounding boxes and recycling guidance).*
 
-\---
 
 ## ⭐ Project Highlights
 
@@ -20,7 +18,6 @@ An end-to-end Computer Vision application for automated waste detection and recy
 * **Automated recycling guidance** based on detected waste categories.
 * **Annotated image generation** for visualizing detection results.
 
-\---
 
 ## 🎯 Key Features \& Real-World Applications
 
@@ -41,13 +38,6 @@ An end-to-end Computer Vision application for automated waste detection and recy
 * **Annotated Results:** Generates an annotated image containing detection results.
 * **Interactive Web UI:** Upload and analyze images through the Angular interface.
 
-\---
-
-## 📸 Demo Gallery
-
-<!-- Add screenshots of your application here -->
-
-\---
 
 ## 🏗️ System Architecture \& Workflow
 
@@ -71,7 +61,6 @@ Detection \& Recycling Recommendations
 Results Displayed in Browser
 ```
 
-\---
 
 ## 📊 Key Results \& Evaluation
 
@@ -100,7 +89,6 @@ The model receives an input image and returns detected waste objects along with 
 
 The training workflow and model development are documented in the project Jupyter Notebook.
 
-\---
 
 ## 🛠️ Technology Stack
 
@@ -112,15 +100,15 @@ The training workflow and model development are documented in the project Jupyte
 * **PyTorch**
 * **OpenCV**
 * **NumPy**
-* Object Detection
+* **Object Detection**
 
 ### Backend Engineering
 
 * **Python**
 * **FastAPI**
 * **Uvicorn**
-* REST API
-* File Upload Handling
+* **REST API**
+* **File Upload Handling**
 
 ### Frontend Engineering
 
@@ -136,7 +124,6 @@ The training workflow and model development are documented in the project Jupyte
 * **Git**
 * **GitHub**
 
-\---
 
 ## 💻 Setup \& Installation
 
@@ -224,8 +211,6 @@ The frontend application will be available at:
 http://localhost:4200
 ```
 
-\---
-
 ## 📁 Repository Structure
 
 ```text
@@ -256,7 +241,6 @@ AI-Waste-Detection-Recycling-Assistant/
 └── README.md
 ```
 
-\---
 
 ## 🔄 Application Workflow
 
@@ -288,7 +272,6 @@ The backend generates an annotated image containing the detected waste objects.
 
 The Angular frontend displays the detected objects, confidence scores, annotated image, and recycling recommendations.
 
-\---
 
 ## ♻️ Recycling Assistance
 
@@ -302,7 +285,6 @@ Detected waste categories are mapped to relevant recycling or disposal guidance.
 
 This allows the system to go beyond simple object detection and provide practical waste-management recommendations.
 
-\---
 
 ## 🎯 Project Objectives
 
@@ -313,7 +295,6 @@ This allows the system to go beyond simple object detection and provide practica
 * Build an end-to-end AI system combining Machine Learning, FastAPI, and Angular.
 * Demonstrate practical deployment-oriented AI application development.
 
-\---
 
 ## 🚀 Future Improvements
 
@@ -326,7 +307,6 @@ This allows the system to go beyond simple object detection and provide practica
 * Optimize inference for edge and mobile devices.
 * Integrate automated waste sorting hardware for smart recycling systems.
 
-\---
 
 ## 👨‍💻 Author
 
@@ -334,7 +314,6 @@ This allows the system to go beyond simple object detection and provide practica
 
 *Data Science | AI/ML | Computer Vision | Msc Statistics*
 
-\---
 
 ## About
 

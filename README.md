@@ -2,7 +2,7 @@
 
 An end-to-end Computer Vision application for automated waste detection and recycling assistance using YOLOv8n, FastAPI, and Angular.
 
-\---
+\
 
 ## 🚀 Live Demo Preview
 

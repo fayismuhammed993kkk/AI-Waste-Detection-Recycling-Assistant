@@ -8,7 +8,7 @@ An end-to-end Computer Vision application for automated waste detection and recy
 ## 🚀 Live Demo Preview
 
 
-https://github.com/user-attachments/assets/d6ff5fbc-377a-4108-8984-2cb81e283f20
+https://github.com/user-attachments/assets/51a047f6-cef7-4550-9130-050a929da944
 
 
 *(Above: The Angular frontend allowing users to upload a waste image, send it to the FastAPI backend, run YOLOv8n inference, and display detected waste objects with bounding boxes and recycling guidance).*

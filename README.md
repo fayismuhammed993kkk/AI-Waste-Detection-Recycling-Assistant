@@ -320,11 +320,3 @@ This allows the system to go beyond simple object detection and provide practica
 
 *Data Science | AI/ML | Computer Vision | Msc Statistics*
 
-
-
-### Topics
-
-`Python` `YOLOv8` `Computer Vision` `Object Detection` `FastAPI` `Angular` `Machine Learning` `AI`
-
-
-

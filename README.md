@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/66dfa2f4-3c98-4243-871a-677a54c77f31
 # ♻️ AI Waste Detection \& Recycling Assistant
 
 `Python` `YOLOv8` `Computer Vision` `Object Detection` `FastAPI` `Angular` `Machine Learning` `AI`
